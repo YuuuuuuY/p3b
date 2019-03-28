@@ -45,11 +45,11 @@ public class HashTable<K extends Comparable<K>, V> implements HashTableADT<K, V>
 
 	// TODO: comment and complete a default no-arg constructor
 	public HashTable() {
-		table = new LinkedList[11]; // the original table size is 11
-		for(int i = 0;i < 11;i++) // initialize
+		table = new LinkedList[23]; // the original table size is 17
+		for(int i = 0;i < 23;i++) // initialize
 			table[i] = new LinkedList<Node>();
-		maxsize = (int)(0.75 * 11);
-		loadFactorThreshold = 0.75;
+		maxsize = (int)(5 * 23);
+		loadFactorThreshold = 5;
 		size = 0; // original size is 0, beacuse it is empty
 	}
 	
